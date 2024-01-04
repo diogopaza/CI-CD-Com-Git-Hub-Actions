@@ -32,7 +32,9 @@ jobs:
       run: docker-compose build
     - name: Create-DB
       run: docker-compose up -d
-    - name: Build with Maven
+    - name: update project
       run: mvn -B clean install
+    - name: run project
+      run: mvn spring-boot:run
 
   
