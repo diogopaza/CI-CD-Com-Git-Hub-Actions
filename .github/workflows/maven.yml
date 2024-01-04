@@ -27,8 +27,9 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-
-    
+        
+    - name: Build-DB
+      run: docker-compose build    
     - name: Create-DB
       run: docker-compose up -d
     - name: wait DB start
