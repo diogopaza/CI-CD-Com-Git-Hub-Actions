@@ -25,7 +25,7 @@ services:
   #  image: 'diogopaza/usuario-pagar-me:latest'
   #  container_name: minha-aplicacao-spring
   #  ports: 
-      - "8085:8085"
+  #    - "8085:8085"
     #environment:  
      # SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-ci:5432/pagamentos-usuarios
      # SPRING_DATASOURCE_USERNAME: postgres
