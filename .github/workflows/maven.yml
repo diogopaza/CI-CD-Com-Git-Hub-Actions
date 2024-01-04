@@ -19,6 +19,16 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    services:
+      postgres:
+        image: postgres
+        ports:
+          - "5858:5432"
+        env:
+          POSTGRES_DB: pagamentos-usuarios
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: 123
+
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK 17
@@ -28,10 +38,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
         
-    - name: Build-DB
-      run: docker-compose build    
-    - name: Create-DB
-      run: docker-compose up -d
+   
     - name: wait DB start
       run: sleep 20
     - name: update project
