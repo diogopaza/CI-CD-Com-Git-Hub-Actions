@@ -7,8 +7,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import usuario.fintech.diogo.usuarios.model.UsuarioModel;
 
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,7 +21,7 @@ public class UsuarioController {
     private String idAplicacaoSpring; */ 
 
     @GetMapping
-    @CircuitBreaker(name = "usuarios-circuit-breaker")
+    //@CircuitBreaker(name = "usuarios-circuit-breaker")
     public String allUsuarios(){
         var frase = "procuro a palavra PROCESSANDO";       
         var palavraProcurada = "processado";
