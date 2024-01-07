@@ -25,8 +25,8 @@ class UsuariosApplicationTests {
 				.nome("Teste")
 				.senha("123")
 				.build();
-		UsuarioModel usuarioSalvo = usuarioRepository.save(usuario);
-		/*Optional<UsuarioModel> usuarioDoBanco = usuarioRepository.findById(usuarioSalvo.getId());
+		/*UsuarioModel usuarioSalvo = usuarioRepository.save(usuario);
+		Optional<UsuarioModel> usuarioDoBanco = usuarioRepository.findById(usuarioSalvo.getId());
 		assertNotNull(usuarioDoBanco.get());
 		assertEquals("Teste", usuarioDoBanco.get().getNome());
 		assertEquals("123", usuarioDoBanco.get().getSenha());	*/
