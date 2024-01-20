@@ -62,8 +62,7 @@
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->		
 		<dependency>
 			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<scope>runtime</scope>
+			<artifactId>postgresql</artifactId>			
 		</dependency>		
 		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
 		<dependency>
