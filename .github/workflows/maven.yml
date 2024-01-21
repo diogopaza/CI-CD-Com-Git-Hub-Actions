@@ -30,6 +30,6 @@ jobs:
         run: mvn -B clean install
       
       - name: run project
-        run: mvn spring-boot:run
+        run: mvn test
 
   
