@@ -17,7 +17,7 @@ class UsuariosApplicationTests {
 	@Autowired
 	UsuarioRepository usuarioRepository;
 
-	/*@Test
+	@Test
 	void contextLoads() {
 
 		UsuarioModel usuario = UsuarioModel.builder()
@@ -25,12 +25,13 @@ class UsuariosApplicationTests {
 				.nome("Teste")
 				.senha("123")
 				.build();
+		assertEquals("123", usuario.getSenha());
 		/*UsuarioModel usuarioSalvo = usuarioRepository.save(usuario);
 		Optional<UsuarioModel> usuarioDoBanco = usuarioRepository.findById(usuarioSalvo.getId());
 		assertNotNull(usuarioDoBanco.get());
 		assertEquals("Teste", usuarioDoBanco.get().getNome());
 		assertEquals("123", usuarioDoBanco.get().getSenha());	
 		assertEquals("Teste", usuario.getNome());
-		assertEquals("123", usuario.getSenha());
-	}*/
+		assertEquals("123", usuario.getSenha());*/
+	}
 }
